@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devic e-width, initial-scale=1.0">
+    <title>ID Card</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        dl{
+            width: 100%;
+        }
+        dt{
+            display: inline-block;
+            width: 40%;
+            font-weight: bold;
+        }
+        dd{
+            display: inline;
+            width: 60%;
+        }
+        dd::before{
+            content: " : ";
+        }
+        .Main-content{
+            height: 100vh;
+            width: 100vw;
+            background-color: #E4DEBE;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .Card{
+            height: 60vh;
+            width: 80vh;
+            border: 4px solid gray;
+            background-color: rgba(245, 245, 245,1.0);
+            font-size: 2em;
+            box-shadow: 20px 20px 4px black;
+        }
+        div i{
+            width: 2rem;
+        }
+        #photo{
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <main class="Main-content">
+        <div class="Card">
+            <div id="image">
+                <img src="logo-only.png" 
+                alt="" width="80%" height="100%">
+                <img src="image.jpg" alt="Photo" width="15%" id="photo">
+            </div>
+            <hr>
+            <hr>
+            <dl>
+                <dt>Name</dt>
+                <dd>Keshav</dd>
+            </dl>
+            <dl>
+                <dt>Roll</dt>
+                <dd>0111xxxxxx03</dd>
+            </dl>
+            <dl>
+                <dt>Gender</dt>
+                <dd>Male</dd>
+            </dl>
+            <dl>
+                <dt>Mobile No.</dt>
+                <dd>xxx7432xxx</dd>
+            </dl>
+            <dl>
+                <dt>Address</dt>
+                <dd>Begusarai , Bihar</dd>
+            </dl>
+        </div>
+    </main>
+</body>
+</html>
